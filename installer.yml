@@ -4,7 +4,9 @@
 - name: Tâche 2
   hosts: all
   become: true
- #vars_files: ./mdpvoute.yml
+ #vars_files: ./mdpvoute.yml Utiliser le mdp dans une voute pour un playbook.      
+ #                           Non fonctionnel après une réinstallation mais voir capture
+ #                           d'écran de l'éxécution.
   tasks:
         - name: Installation Lynx
           command: "apt install lynx -y"
